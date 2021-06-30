@@ -5,7 +5,7 @@ console.log('***** Cart Functions *****');
 
 
 let basket =[];
-  console.log( basket );
+console.log( basket );
 
 function addItem(item){
     console.log( 'Item added to Basket:', item);
@@ -16,10 +16,23 @@ function addItem(item){
 function itemAdded(){
   if(basket.length>0){
     return true
-}
+  }
   else{
     return false
-    }
+  }
 }
-  addItem('Steak')
-  console.log('Was an item added to basket?',itemAdded());
+
+function listLoop(){
+  for ( i=0; i<basket.length; i++){
+    console.log('Items in basket', basket[ i ]);
+
+  }
+}// end of list loop
+
+
+
+
+addItem('Steak');
+itemAdded();
+console.log('Was an item added to basket?',itemAdded());
+listLoop();
