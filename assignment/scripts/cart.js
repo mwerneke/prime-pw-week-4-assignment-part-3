@@ -5,16 +5,13 @@ console.log('***** Cart Functions *****');
 let basket =[];
 console.log( basket );
 
-
 function emptyBasket(){
   while (basket.length > 0){
     basket.pop();
     return basket.length;
   }
 
-
 }//end of empty basket
-
 
 function addItem(item){
     console.log( 'Item added to Basket:', item);
@@ -37,8 +34,7 @@ function listLoop(){
     console.log('Items in basket', basket[ i ]);
   }
 
-
-}// end
+}
 
 addItem('Steak');
 addItem('Fruit');
